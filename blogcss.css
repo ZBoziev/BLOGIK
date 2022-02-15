@@ -5,7 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #F6E5E5;
+    background-color: #F6E5E5;  
 }
 
 main {
@@ -66,18 +66,20 @@ a:hover {
     font-size: 36px;
 }
 
-article:nth-child(odd) {
+article:nth-child(odd) {   
     width: 580px;
     background: rgba(200, 221, 240, 0.6);
     margin-bottom: 52px;
     border: 3px solid #C8DDF0;
+    border-radius: 5px;
 }
 
 article:nth-child(even) {
     width: 580px;
     background: rgba(229, 229, 229, 0.6);
     margin-bottom: 52px;
-    border: 3px solid #E5E5E5; 
+    border: 3px solid #E5E5E5;
+    border-radius: 5px; 
 }
 
 .thumbnail {
