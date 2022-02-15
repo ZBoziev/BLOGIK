@@ -1,5 +1,5 @@
 *, *::before, *::after{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -70,12 +70,14 @@ article:nth-child(odd) {
     width: 580px;
     background: #C8DDF0;
     margin-bottom: 52px;
+    border: 3px solid #C8DDF0;
 }
 
 article:nth-child(even) {
     width: 580px;
     background: #E5E5E5;
     margin-bottom: 52px;
+    
 }
 
 .thumbnail {
