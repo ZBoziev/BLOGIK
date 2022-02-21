@@ -1,10 +1,13 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #F6E5E5;  
+    background-color: #F6E5E5;
 }
 
 main {
@@ -31,26 +34,15 @@ ul {
 }
 
 .nav_main {
-    color: red; 
+    color: red;
     margin-left: 108px;
-    text-decoration: none;
-    text-decoration: underline;
 }
 
-.nav_blog {
+.navigation {
     margin-left: 32px;
-    text-decoration: none;
-    color: black;
 }
 
-.nav_portfolio {
-    margin-left: 32px;
-    text-decoration: none;
-    color: black;
-}
-
-.nav_vk {
-    margin-left: 32px;
+a {
     text-decoration: none;
     color: black;
 }
@@ -61,28 +53,36 @@ a:hover {
 }
 
 .heading {
+    padding-top: 56px;
     font-weight: 500;
     font-size: 36px;
 }
 
-article:nth-child(odd) {   
+.site-name {
+    font-weight: 500;
+}
+
+.article_card {
     width: 580px;
-    background: rgba(200, 221, 240, 0.6);
     margin-bottom: 52px;
+}
+
+article:nth-child(odd) {
+    background: rgba(200, 221, 240, 0.6);
     border: 3px solid #C8DDF0;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 article:nth-child(even) {
-    width: 580px;
     background: rgba(229, 229, 229, 0.6);
-    margin-bottom: 52px;
     border: 3px solid #E5E5E5;
-    border-radius: 5px; 
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .thumbnail {
-    width: 580px;
+    width: 100%;
 }
 
 .title {
@@ -102,21 +102,19 @@ article:nth-child(even) {
     width: 532px;
 }
 
+.link_container {
+    padding-bottom: 24px;
+}
+
 .link {
     font-size: 18px;
     color: #1D5CFF;
     margin-left: 24px;
-    padding-bottom: 24px;
 }
 
 footer {
     margin-top: 56px;
     background: #C3D8FF;
-    
-}
-
-.down {
-    padding: 10px 0;
     color: #3F3F3F;
     text-align: center;
     margin-bottom: 0;
